@@ -1,0 +1,212 @@
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #4b89dc;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    min-height: 250px;
+    width: 100%;
+}
+
+.left-part {
+    width: 100%;
+}
+
+.photo-container {
+    position: absolute;
+    height: 180px;
+    width: 160px;
+    bottom: -10%;
+    left: 4%;
+    border: 8px solid white;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-part {
+    transform: translateX(-40%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.right-part h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 0.9;
+    margin: 0;
+    padding: 0;
+}
+
+.right-part p {
+    color: white;
+    font-size: 16px;
+    margin: 0;
+}
+
+.right-part .btn-group {
+    display: flex;
+}
+
+.right-part .btn-group button {
+    font-family: Poppins, sans-serif;
+    padding: 7px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.right-part .btn-group button:nth-child(2) {
+    background-color: #36bc9b;
+    color: white;
+    margin-left: 10px;
+}
+
+.right-part .btn-group button:nth-child(1) {
+    color: #334155;
+    background-color: #e5e7eb;
+}
+
+
+.about-me, .skills, .work-experience, .education, .contact, .your-skills {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-me h2, .skills h2, .work-experience h2, .education h2, .contact h2, .your-skills h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-text, .contact-info {
+    flex: 1 1 45%;
+    margin: 10px;
+}
+
+.about-text p, .contact-info p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.skills .skill, .your-skills .skill-category {
+    margin: 10px 0;
+}
+
+.skills .skill p, .your-skills .skill-category h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.progress-bar, .skill-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.progress, .skill-level {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.progress.html, .skill-level.html {
+    width: 60%;
+    background-color: #2196f3;
+}
+
+.progress.css, .skill-level.css {
+    width: 60%;
+    background-color: #2196f3;
+}
+
+.progress.js, .skill-level.js {
+    width: 30%;
+    background-color: #2196f3;
+}
+
+.separator {
+    border-top: 1px solid grey;
+    margin: 20px 0;
+}
+
+.work-experience .experience-block, .education .experience-block {
+    background-color: #f3f3f3;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.work-experience .experience-text h3, .education .experience-text h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+.work-experience .experience-text p, .education .experience-text p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Ajoute de l'espace entre les champs de saisie */
+}
+
+.contact button {
+    padding: 10px 15px; /* Réduire la largeur du bouton "Send" */
+    font-size: 16px;
+    margin-top: 10px; /* Ajoute de l'espace au-dessus du bouton "Send" */
+    cursor: pointer;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

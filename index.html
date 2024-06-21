@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="left-part">
+          <div class="photo-container">
+            <img src="photo.jpg" alt="Photo" class="photo" />
+          </div>
+        </div>
+
+        <div class="right-part">
+          <h1>Samy Bekrat</h1>
+          <p>Young Front End Developer</p>
+          <div class="btn-group">
+            <a
+              href="resume-example.pdf"
+              target="_blank"
+              download
+              class="download-cv"
+            >
+              <button>Download CV</button>
+            </a>
+            <button class="hire-me">Hire Me</button>
+          </div>
+        </div>
+      </header>
+
+      <div class="about-me">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Here you can write a brief introduction about yourself. Mention
+              your passions, skills, and any other information you think is
+              relevant to give a complete picture of who you are. Make sure it
+              captures the reader's attention and provides a glimpse into your
+              personality and professional background.
+            </p>
+          </div>
+          <div class="contact-info">
+            <p><strong>Age:</strong> 19</p>
+            <p><strong>Email:</strong> svmybekrat@gmail.com</p>
+            <p><strong>Phone:</strong> 07 60 58 12 72</p>
+            <p><strong>Address:</strong> Vidauban</p>
+          </div>
+        </div>
+      </div>
+      <div class="separator"></div>
+      <div class="skills">
+        <h2>Professional Skills</h2>
+        <div class="skill">
+          <p>HTML</p>
+          <div class="progress-bar">
+            <div class="progress html"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p>CSS</p>
+          <div class="progress-bar">
+            <div class="progress css"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p>JavaScript</p>
+          <div class="progress-bar">
+            <div class="progress js"></div>
+          </div>
+        </div>
+      </div>
+      <div class="work-experience">
+        <h2>Work Experience</h2>
+        <div class="experience-block">
+          <div class="experience-text">
+            <h3>Seasonal employee in the Castel Frères estate</h3>
+            <p>2020</p>
+            <br />
+            <p>
+              Office internship I designed schematics and studied how the
+              company worked
+            </p>
+          </div>
+        </div>
+        <div class="experience-block">
+          <div class="experience-text">
+            <h3>Seasonal employee in the Castel Frères estate</h3>
+            <p>2022</p>
+            <br />
+            <p>Manufacturing of products for the company</p>
+          </div>
+        </div>
+      </div>
+      <div class="education">
+        <h2>Education</h2>
+        <div class="experience-block">
+          <div class="experience-text">
+            <h3>College certificate</h3>
+            <p>2019-2020</p>
+            <br />
+          </div>
+        </div>
+        <div class="experience-block">
+          <div class="experience-text">
+            <h3>
+              Bachelor of Science and Technology in Industry and Sustainable
+              Development
+            </h3>
+            <p>2022-2023</p>
+            <br />
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <h2>Contact</h2>
+        <form onsubmit="return validateForm()">
+          <div class="form-row">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button type="submit">Send</button>
+          <p id="error-message" style="display: none; color: red"></p>
+        </form>
+      </div>
+    </div>
+    <script>
+      function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+        var errorMessage = document.getElementById("error-message");
+
+        if (name === "" || email === "" || message === "") {
+          errorMessage.style.display = "block"; // Afficher le message d'erreur
+          errorMessage.innerHTML = "Please fill out all fields."; // Message d'erreur
+          return false; // Empêcher l'envoi du formulaire
+        } else {
+          errorMessage.style.display = "none"; // Masquer le message d'erreur s'il n'y a pas d'erreur
+          return true; // Autoriser l'envoi du formulaire
+        }
+      }
+    </script>
+  </body>
+</html>
